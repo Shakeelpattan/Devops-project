@@ -19,6 +19,8 @@
 
         <!-- Sonar (NO credentials here) -->
         <sonar.host.url>http://54.226.21.126:9000/</sonar.host.url>
+        <sonar.login>admin</sonar.login>
+	<sonar.password>Admin@123456</sonar.password>
     </properties>
 
     <dependencies>
