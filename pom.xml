@@ -67,7 +67,7 @@
     </distributionManagement>
 
     <build>
-        <finalName>bookstore-app</finalName>
+        <finalName>Devops-project</finalName>
 
         <plugins>
 
