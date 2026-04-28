@@ -1,16 +1,42 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    background: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #f6f9fc, #e9eff5);
 }
 
-header {
-    background: linear-gradient(90deg, #2874f0, #00c6ff);
+/* Navbar */
+.navbar {
+    background: #2874f0;
     color: white;
-    padding: 20px;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.search-box input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px;
     text-align: center;
 }
 
+/* Books Grid */
 .books {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -18,23 +44,50 @@ header {
     padding: 20px;
 }
 
+/* Card */
 .card {
-    background: white;
+    background: rgba(255,255,255,0.9);
+    border-radius: 12px;
     padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-8px);
 }
 
-button {
-    background: #ff9f00;
+.book-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.price {
+    color: green;
+    font-weight: bold;
+}
+
+/* Button */
+.btn {
+    background: linear-gradient(45deg, #ff9f00, #ff6161);
     border: none;
     padding: 10px;
     color: white;
+    border-radius: 20px;
     cursor: pointer;
-    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #172337;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
