@@ -55,13 +55,13 @@
         <repository>
             <id>nexus</id>
             <name>Releases</name>
-            <url>http://your-nexus-server:9091/repository/releases/</url>
+            <url>http://54.147.6.189:9091/repository/Devops-project-release/</url>
         </repository>
 
         <snapshotRepository>
             <id>nexus</id>
             <name>Snapshots</name>
-            <url>http://54.147.6.189:9091/repository/Devops-project/</url>
+            <url>http://54.147.6.189:9091/repository/Devops-project-snapshot/</url>
         </snapshotRepository>
 
     </distributionManagement>
